@@ -368,6 +368,11 @@ a.badge:hover {
     color: #8a8a8a;
     font-size: 13px;
     font-style: italic;
+
+    // Draw each date from its data-label; see the comment in index.html
+    time::before {
+      content: attr(data-label);
+    }
   }
 
   .job-tech {
