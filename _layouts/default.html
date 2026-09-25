@@ -17,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include head-custom.html %}
   </head>
-  <body>
-      {% comment %} Nav hidden for now; remove this comment wrapper to restore it.
+  <body{% if site.show_blog %} class="has-nav"{% endif %}>
+      {% if site.show_blog %}
       <div id="header">
         <nav>
           <ul>
@@ -27,7 +27,7 @@
           </ul>
         </nav>
       </div><!-- end header -->
-      {% endcomment %}
+      {% endif %}
 
     <div class="wrapper">
 

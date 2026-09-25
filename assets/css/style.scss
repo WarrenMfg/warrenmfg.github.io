@@ -3,6 +3,12 @@
 
 @import 'jekyll-theme-midnight';
 
+// Dark backdrop behind the page, so overscroll (rubber-band scrolling) isn't white.
+// Midpoint of Midnight's body gradient (#2a2a29 → #1c1c1c).
+html {
+  background-color: #232323;
+}
+
 // Remove Midnight's outer spacing (it reserved room for the fixed nav)
 body {
   padding-bottom: 0;
@@ -12,6 +18,11 @@ section {
   margin-top: 0;
   margin-bottom: 0;
   padding: 30px 0;
+}
+
+// Room for the fixed nav bar (56px + 4px border) when the blog is switched on
+.has-nav section {
+  margin-top: 60px;
 }
 
 // Site navigation: replaces Midnight's green buttons (and its stray blue nav background)

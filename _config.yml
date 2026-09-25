@@ -29,6 +29,10 @@ github_username: WarrenMfg
 
 # Build settings
 theme: jekyll-theme-midnight
+
+# Blog switch. true: show the nav (Resume / Blog) and the blog.
+# false: hide the nav, and redirect blog URLs to the resume.
+show_blog: false
 plugins:
   - jekyll-feed
 
@@ -40,6 +44,7 @@ defaults:
     values:
       layout: post
       permalink: /blog/:title
+      blog: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
