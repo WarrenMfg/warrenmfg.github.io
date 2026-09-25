@@ -4,6 +4,9 @@
 
 <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
 
+<!-- Stop iOS Safari from turning date ranges like "10/2013 – 12/2025" into phone links -->
+<meta name="format-detection" content="telephone=no">
+
 {% comment %} While the blog is switched off (show_blog in _config.yml), send blog URLs to the resume {% endcomment %}
 {% if page.blog and site.show_blog != true %}
 <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
