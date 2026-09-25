@@ -5,17 +5,22 @@ append: m.source %} {% assign thumb = 'https://i.ytimg.com/vi/' | append:
 m.source | append: '/mqdefault.jpg' %} {% when 'github' %} {% assign href =
 'https://github.com/' | append: site.github_username | append: '/' | append:
 m.source %} {% assign thumb = '/assets/images/resume/' | append: m.source |
-append: '.jpeg' | relative_url %} {% else %} {% assign href =
-'/assets/images/resume/' | append: m.source | relative_url %} {% assign thumb =
-href %} {% endcase %}
+append: '.jpeg' | relative_url %} {% when 'usgs' %} {% assign href =
+'https://pubs.usgs.gov/publication/' | append: m.source %} {% assign thumb =
+'/assets/images/resume/' | append: m.source | append: '.webp' | relative_url %}
+{% when 'spotify' %} {% assign href = 'https://open.spotify.com/album/' |
+append: m.source %} {% assign thumb = '/assets/images/resume/' | append:
+m.source | append: '.webp' | relative_url %}
+{% else %} {% assign href = '/assets/images/resume/' | append: m.source |
+relative_url %} {% assign thumb = href %} {% endcase %}
 <a
   class="media media-{{ m.type | default: 'img' }}"
   href="{{ href }}"
   target="_blank"
   rel="noopener"
-  title="{{ m.title }}"
+  title="{{ m.title | escape }}"
 >
-  <img src="{{ thumb }}" alt="{{ m.title }}" loading="lazy" />
+  <img src="{{ thumb }}" alt="{{ m.title | escape }}" loading="lazy" />
   {% if m.type == 'youtube' %}<span class="media-play" aria-hidden="true"></span
   >{% endif %}
 </a>

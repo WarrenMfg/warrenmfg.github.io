@@ -4,7 +4,12 @@
 # Media types (all need a `title`, used for alt text and the hover tooltip):
 #   img      source: filename in /assets/images/resume/ — opens the full image
 #   youtube  source: video ID (the part after watch?v=) — thumbnail links to YouTube
-#   github   source: repository name under your GitHub account — links to the repo
+#   github   source: repository name under your GitHub account — links to the repo;
+#            thumbnail is /assets/images/resume/<source>.jpeg
+#   usgs     source: publication ID (e.g. sir20185170) — links to pubs.usgs.gov;
+#            thumbnail is /assets/images/resume/<source>.webp
+#   spotify  source: album ID (the part after open.spotify.com/album/) — links to Spotify;
+#            thumbnail is /assets/images/resume/<source>.webp
 
 name: Kent Warren
 photo: /assets/images/resume/kent-warren.jpg
@@ -222,26 +227,66 @@ experience:
       - Established and administered the product review process for stakeholders across the organization.
     media:
       - {
-          type: img,
-          title: Drinking Water Health Standards report cover,
-          source: usgs-1.jpg,
+          type: usgs,
+          title: 'Drinking Water Health Standards Comparison and Chemical Analysis of Groundwater for 72 Domestic Wells in Bradford County, Pennsylvania, 2016',
+          source: sir20185170,
+        }
+      - {
+          type: usgs,
+          title: 'Effective Solubility Assessment for Organic Analytes in Liquid Samples, BKK Class I Landfill, West Covina, California, 2014-16',
+          source: ofr20191080,
+        }
+      - {
+          type: usgs,
+          title: 'Gap Analysis Project (GAP) Terrestrial Vertebrate Species Richness Maps for the Conterminous U.S.',
+          source: sir20195034,
+        }
+      - {
+          type: usgs,
+          title: 'Drought forecasting for streams and groundwaters in northeastern United States',
+          source: fs20193015,
+        }
+      - {
+          type: usgs,
+          title: 'Geomorphic characteristics of Tenmile Creek, Montgomery County, Maryland, 2014-16',
+          source: sir20185098,
+        }
+      - {
+          type: usgs,
+          title: 'Hurricane Sandy Impacts on Coastal Wetland Resilience',
+          source: ofr20181142,
+        }
+      - {
+          type: usgs,
+          title: 'Spatial Distribution of Nutrients, Chloride, and Suspended Sediment Concentrations and Loads Determined by Using Different Sampling Methods in a Cross Section of the Trenton Channel of the Detroit River, Michigan, November 2014-November 2015',
+          source: sir20185141,
+        }
+      - {
+          type: usgs,
+          title: 'U.S. Geological Survey (USGS) Water-Use Websites',
+          source: fs20183044,
+        }
+      - {
+          type: usgs,
+          title: 'Agricultural Conservation Practice Implementation in the Chesapeake Bay Watershed Supported by the U.S. Department of Agriculture',
+          source: ds1102,
+        }
+      - {
+          type: usgs,
+          title: 'An initial comparison of pesticides and amphibian pathogens between natural and created wetlands in the New Jersey Pinelands, 2014-16',
+          source: ofr20181077,
+        }
+      - {
+          type: usgs,
+          title: 'Water Priorities for the Nation—The U.S. Geological Survey Next Generation Water Observing System',
+          source: fs20193046,
         }
       - {
           type: img,
-          title: Effective Solubility Assessment report cover,
-          source: usgs-2.jpg,
+          title: 'Amphibian Research & Monitoring Initiative',
+          source: usgs-armi.jpeg,
         }
-      - {
-          type: img,
-          title: Gap Analysis Project species richness maps cover,
-          source: usgs-3.jpg,
-        }
-      - { type: img, title: Drought Forecasting fact sheet, source: usgs-4.jpg }
-      - {
-          type: img,
-          title: Geomorphic Characteristics of Tenmile Creek report cover,
-          source: usgs-5.jpg,
-        }
+      - { type: img, title: 'USGS Coin', source: usgs-coin.jpeg }
 
   - title: Cavalry Scout
     org: U.S. Army
@@ -258,31 +303,13 @@ experience:
       - Managed production logistics by sourcing and coordinating equipment, locations, and talent, while facilitating national media exposure on MTV, A&E, E!, Fuse TV, and NBC.
       - Increased earnings by 10% through contract negotiation, international event logistics coordination, and campaign development including promotional content and market outreach.
     media:
-      - {
-          type: img,
-          title: Couple silhouetted at sunset,
-          source: fools-and-horses-1.jpg,
-        }
-      - {
-          type: img,
-          title: Fools & Horses logo artwork,
-          source: fools-and-horses-2.jpg,
-        }
-      - {
-          type: img,
-          title: I Am the Ghost album art,
-          source: fools-and-horses-3.jpg,
-        }
-      - {
-          type: img,
-          title: Pop Filter album art,
-          source: fools-and-horses-4.jpg,
-        }
-      - {
-          type: img,
-          title: Pop Filter Rethoughts album art,
-          source: fools-and-horses-5.jpg,
-        }
+      - { type: youtube, title: '"3 Chords" Music Video', source: '32va-LZ0VTg' }
+      - { type: spotify, title: '"Fools & Horses" Album (2010)', source: 3WOYK8ri6e0LVXUP2TzdQX }
+      - { type: spotify, title: '"I Am the Ghost" Album (2008)', source: 3cYqxvG3oqW3ycsBY6qwYi }
+      - { type: spotify, title: '"Pop Filter" Album (2006)', source: 74CraLuG2gJ8gibyWXdaHP }
+      - { type: spotify, title: '"Pop Filter - Rethoughts" Album (2006)', source: 2bmjpeilZ5TZyB5GeOFrxN }
+      - { type: spotify, title: '"Saturday Morning" Album (2004)', source: 6EjpogQNmkidlbV0fmWaBH }
+      - { type: img, title: 'Fools & Horses Promo Poster', source: fools-and-horses.jpeg }
 
 education:
   - title: Master of Business Administration
