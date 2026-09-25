@@ -26,7 +26,7 @@ career_goal:
   - of tech professionals
 
 social:
-  linkedin: '' # e.g. https://www.linkedin.com/in/your-profile
+  linkedin: https://www.linkedin.com/in/theartofwarren/
   github: https://github.com/WarrenMfg
 
 highlights:
@@ -303,25 +303,56 @@ experience:
       - Managed production logistics by sourcing and coordinating equipment, locations, and talent, while facilitating national media exposure on MTV, A&E, E!, Fuse TV, and NBC.
       - Increased earnings by 10% through contract negotiation, international event logistics coordination, and campaign development including promotional content and market outreach.
     media:
-      - { type: youtube, title: '"3 Chords" Music Video', source: '32va-LZ0VTg' }
-      - { type: spotify, title: '"Fools & Horses" Album (2010)', source: 3WOYK8ri6e0LVXUP2TzdQX }
-      - { type: spotify, title: '"I Am the Ghost" Album (2008)', source: 3cYqxvG3oqW3ycsBY6qwYi }
-      - { type: spotify, title: '"Pop Filter" Album (2006)', source: 74CraLuG2gJ8gibyWXdaHP }
-      - { type: spotify, title: '"Pop Filter - Rethoughts" Album (2006)', source: 2bmjpeilZ5TZyB5GeOFrxN }
-      - { type: spotify, title: '"Saturday Morning" Album (2004)', source: 6EjpogQNmkidlbV0fmWaBH }
-      - { type: img, title: 'Fools & Horses Promo Poster', source: fools-and-horses.jpeg }
+      - {
+          type: youtube,
+          title: '"3 Chords" Music Video',
+          source: '32va-LZ0VTg',
+        }
+      - {
+          type: spotify,
+          title: '"Fools & Horses" Album (2010)',
+          source: 3WOYK8ri6e0LVXUP2TzdQX,
+        }
+      - {
+          type: spotify,
+          title: '"I Am the Ghost" Album (2008)',
+          source: 3cYqxvG3oqW3ycsBY6qwYi,
+        }
+      - {
+          type: spotify,
+          title: '"Pop Filter" Album (2006)',
+          source: 74CraLuG2gJ8gibyWXdaHP,
+        }
+      - {
+          type: spotify,
+          title: '"Pop Filter - Rethoughts" Album (2006)',
+          source: 2bmjpeilZ5TZyB5GeOFrxN,
+        }
+      - {
+          type: spotify,
+          title: '"Saturday Morning" Album (2004)',
+          source: 6EjpogQNmkidlbV0fmWaBH,
+        }
+      - {
+          type: img,
+          title: 'Fools & Horses Promo Poster',
+          source: fools-and-horses.jpeg,
+        }
 
 education:
   - title: Master of Business Administration
     org: UMGC
+    url: https://www.umgc.edu/
     note: GPA 4.0
     description: Focus on finance, marketing, human resources, business law, strategy, and leadership.
   - title: Bachelor of Science in Management Studies
     org: UMGC
+    url: https://www.umgc.edu/
     note: GPA 3.72
     description: Business management principles focused on ethical decision making, problem solving, and leadership.
   - title: Bachelor of Science in Digital Media & Web Technology
     org: UMGC
+    url: https://www.umgc.edu/
     note: Summa Cum Laude, GPA 4.0
     description: Gained hands-on experience in web development, illustration, and photo manipulation.
 
@@ -344,6 +375,9 @@ certifications:
   - title: Advanced Software Engineering Immersive Program
     org: Hack Reactor
     description: 6-month full stack JavaScript development curriculum with lectures, pair programming, and mentorship.
+  - title: Professional Music Certificate
+    org: Berklee College of Music
+    description: 2-year diverse concentration in music performance, songwriting, production, law, and business.
 
 awards:
   - title: Army Achievement Medal
@@ -359,43 +393,62 @@ awards:
 projects:
   - title: Dapper Applicant
     org: YouTube
-    url: ''
+    url: https://www.youtube.com/watch?v=DJ2U-i3ulxw
     description: Tailor your resume to specific job descriptions directly from a browser sidebar.
   - title: AI Communication Coach
     org: YouTube
-    url: ''
+    url: https://www.youtube.com/watch?v=RJUtkKnL1Nw
     description: Communication coaching with simultaneous AI coach participants.
   - title: Texting OpenAI
     org: GitHub
-    url: ''
+    url: https://github.com/WarrenMfg/openai-sms
     description: Text OpenAI a prompt to generate a response.
+  - title: wordie CLI
+    org: npm
+    url: https://www.npmjs.com/package/wordie
+    description: CLI dictionary and thesaurus using Datamuse.
 
 publications:
-  - { title: 3 Chords, org: YouTube, url: '', description: Fools & Horses }
+  - {
+      title: 3 Chords,
+      org: YouTube,
+      url: https://www.youtube.com/watch?v=32va-LZ0VTg,
+      description: Fools & Horses,
+    }
   - {
       title: Fools & Horses,
       org: Spotify,
-      url: '',
+      url: https://open.spotify.com/album/3WOYK8ri6e0LVXUP2TzdQX,
       description: Fools & Horses,
     }
   - {
       title: I Am the Ghost,
       org: Spotify,
-      url: '',
+      url: https://open.spotify.com/album/3cYqxvG3oqW3ycsBY6qwYi,
       description: Fools & Horses,
     }
-  - { title: Off the Clock, org: Apple Music, url: '', description: Starbucks }
+  - {
+      title: Off the Clock,
+      org: Apple Music,
+      url: https://music.apple.com/us/album/off-the-clock-vol-1/216529225,
+      description: Starbucks,
+    }
   - {
       title: 'Pop Filter: Rethoughts',
       org: Spotify,
       url: '',
       description: Fools & Horses,
     }
-  - { title: Pop Filter, org: Spotify, url: '', description: Fools & Horses }
+  - {
+      title: Pop Filter,
+      org: Spotify,
+      url: https://open.spotify.com/album/2bmjpeilZ5TZyB5GeOFrxN,
+      description: Fools & Horses,
+    }
   - {
       title: Saturday Morning,
       org: Spotify,
-      url: '',
+      url: https://open.spotify.com/album/74CraLuG2gJ8gibyWXdaHP,
       description: Fools & Horses,
     }
 
