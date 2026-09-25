@@ -333,13 +333,19 @@ a.badge:hover {
 .job {
   margin-bottom: 44px;
 
+  // Dates sit on their own line below the title until 720px, then move to the right
   .job-heading {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 2px 16px;
+    flex-direction: column;
+    gap: 2px;
     margin-bottom: 6px;
+
+    @media (min-width: 721px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+    }
   }
 
   h3 {
