@@ -119,6 +119,43 @@
   }
 }
 
+// Single post: hero image and header
+.post {
+  margin-top: 30px;
+
+  .post-hero {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  .post-header {
+    margin: 28px 0 24px;
+
+    time {
+      color: #8a8a8a;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 6px 0 0;
+      color: #ffcc00;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+  }
+
+  .post-back {
+    margin-top: 40px;
+  }
+}
+
 @media print, screen and (max-width: 480px) {
   #header {
     margin-top: 0;
