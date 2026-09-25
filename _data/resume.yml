@@ -76,6 +76,10 @@ experience:
         alt: Data Science & Analytics Hub
       - src: /assets/images/resume/session-replay.webp
         alt: Session Replay
+      - src: /assets/images/resume/ada-response.webp
+        alt: Azure DevOps Assistant response
+      - src: /assets/images/resume/ada-no-data.webp
+        alt: Azure DevOps Assistant without data
 
   - title: Web Developer & Graphic Designer
     org: Freelance
@@ -98,14 +102,6 @@ experience:
     images:
       - src: /assets/images/resume/freelance-1.jpg
         alt: Illustrated coffee cup
-      - src: /assets/images/resume/freelance-2.jpg
-        alt: 'Sugar skull illustration: Till Death Do Us Party'
-      - src: /assets/images/resume/freelance-3.jpg
-        alt: Sugar skull illustration in yellow
-      - src: /assets/images/resume/freelance-4.jpg
-        alt: Black-and-white character illustration
-      - src: /assets/images/resume/freelance-5.jpg
-        alt: Gear and sun logo
 
   - title: Software Engineer
     org: Guaranteed Rate
