@@ -1,0 +1,5 @@
+<div class="entry">
+  <h4>{{ include.item.title }}</h4>
+  {% include badge.html text=include.item.org url=include.item.url %}
+  <p>{% if include.item.note %}<em>{{ include.item.note }}</em> — {% endif %}{{ include.item.description }}</p>
+</div>

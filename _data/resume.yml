@@ -1,0 +1,217 @@
+# Resume content, rendered by index.html.
+# Optional fields: `url` on badges makes them links; `images` adds a carousel.
+
+name: Kent Warren
+photo: /assets/images/resume/headshot.jpg
+tagline:
+  - Innovative technologist
+  - 20+ years leading digital products
+traits:
+  - Curious Innovator
+  - High-Impact Executor
+  - Forward-Thinking Strategist
+career_goal:
+  - To enable innovation
+  - while mentoring the next generation
+  - of tech professionals
+
+social:
+  linkedin: '' # e.g. https://www.linkedin.com/in/your-profile
+  github: https://github.com/WarrenMfg
+
+highlights:
+  - heading: Innovation Strategy & Organizational Leadership
+    items:
+      - Developed a facilitated innovation framework — including uniform templates for cost/benefit analyses, product proposals, and stakeholder handoffs — and authored enterprise-wide innovation strategy as co-lead for the Engineering Culture Council's Innovation Subcommittee.
+      - Directed 2 cross-functional teams that emerged from prior framework iterations — Work Center's Next Best Action feature and Appointment Manager's no-show/cancellation ML prediction model — demonstrating a validated concept-to-scale transition.
+      - Oversaw end-to-end launch of 4 products as an independent music entrepreneur, managing external vendors and investors, delivering on time and within budget, while leading a merchandise redesign initiative that drove over 200% revenue increase.
+  - heading: P&L Impact & Business Results
+    items:
+      - Directed initiatives targeting $6.45M in annual profit, conservatively, through validated ML-driven product features.
+      - Led discovery and prototype development of a two-sided marketplace connecting clients with local business offers, projected to generate $8M/yr in profit.
+      - Achieved 99.99% uptime, 35% YoY adoption growth, and 5.6M annual report views as product owner for a custom enterprise BI platform and content management system.
+  - heading: Enterprise Platforms & Emerging Technology
+    items:
+      - Directed development of an embedded self-service data analysis AI chatbot querying internal data to deliver stakeholder summaries and visualizations, reducing time-to-insight from weeks to minutes.
+      - "Directed prototype development across 4 other initiatives: a multi-AI agent orchestration system for store placement analysis, a real user monitoring system with ML-driven interventions to reduce onboarding friction, an AI browser extension for Azure DevOps, and a commenting browser extension for Microsoft Purview."
+      - Served as tech lead for a custom enterprise BI platform and content management system — a full-scale internal build spanning architecture, SDLC and PDLC, and content management.
+
+experience:
+  - title: Program Director, Business Innovation & IT Alignment
+    org: H&R Block
+    dates: 01/2022 – 08/2026
+    tech: [TypeScript, Node.js, Express.js, Python, FastAPI, Cosmos DB, React, Redux, Jest, React Testing Library, Power Automate, Figma]
+    bullets:
+      - Developed a facilitated innovation framework to build cross-functional AI/ML product features, while establishing uniform templates for cost/benefit analyses, product proposals, presentations, and handoffs.
+      - Directed 2 cross-functional teams that emerged from prior framework iterations — Work Center's Next Best Action feature, and Appointment Manager's no-show/cancellation ML prediction model which targeted $6.45M in annual profit conservatively, demonstrating a validated concept-to-scale transition.
+      - Authored enterprise innovation strategy as the Engineering Culture Council's Innovation Subcommittee co-lead.
+      - Served as product owner and tech lead for the Data Science & Analytics Hub website — a custom enterprise business intelligence platform and content management system; achieved 99.99% uptime, 35% YoY adoption growth, and 5.6M annual report views.
+      - Directed development of an embedded self-service data analysis AI chatbot querying internal data to deliver stakeholder summaries and visualizations, reducing time-to-insight from weeks to minutes.
+      - "Directed prototype development across 5 initiatives: a multi-AI agent orchestration system for store placement analysis, a two-sided marketplace connecting clients with local business offers ($8M/yr projected profit), a real user monitoring system with ML-driven interventions to reduce onboarding friction, an AI browser extension for Azure DevOps, and a commenting browser extension for Microsoft Purview."
+      - Facilitated 50% increase in YoY throughput by developing an automated work request process.
+    images:
+      - src: /assets/images/resume/hrblock-1.jpg
+        alt: AI chatbot report summary
+      - src: /assets/images/resume/hrblock-2.jpg
+        alt: AI chatbot data visualization
+      - src: /assets/images/resume/hrblock-3.jpg
+        alt: Local business deals marketplace prototype
+      - src: /assets/images/resume/hrblock-4.jpg
+        alt: Marketplace business dashboard prototype
+      - src: /assets/images/resume/hrblock-5.jpg
+        alt: Data Science & Analytics Hub home page
+
+  - title: Web Developer & Graphic Designer
+    org: Freelance
+    dates: 10/2013 – 12/2025
+    tech: [TypeScript, MongoDB, Mongoose, Node.js, Express.js, React, Redux, Bootstrap, AWS, Adobe]
+    bullets:
+      - Drove product development from discovery to deployment for clients, combining software engineering, digital media, and hands-on project, budget, and vendor management.
+    images:
+      - src: /assets/images/resume/freelance-1.jpg
+        alt: Illustrated coffee cup
+      - src: /assets/images/resume/freelance-2.jpg
+        alt: "Sugar skull illustration: Till Death Do Us Party"
+      - src: /assets/images/resume/freelance-3.jpg
+        alt: Sugar skull illustration in yellow
+      - src: /assets/images/resume/freelance-4.jpg
+        alt: Black-and-white character illustration
+      - src: /assets/images/resume/freelance-5.jpg
+        alt: Gear and sun logo
+
+  - title: Software Engineer
+    org: Guaranteed Rate
+    dates: 02/2021 – 01/2022
+    tech: [TypeScript, Node.js, Express.js, React, Redux, TailwindCSS, Chart.js, Jest, React Testing Library]
+    bullets:
+      - Deployed MVP in 6 months by leading frontend development for a new customer-facing web application.
+      - Built an automated browser screenshot uploader as part of an error logging strategy.
+    images:
+      - src: /assets/images/resume/guaranteed-rate-1.jpg
+        alt: screenshot-uploader repository on GitHub
+        url: https://github.com/WarrenMfg/screenshot-uploader
+
+  - title: Developer
+    org: Virtual Service Operations
+    dates: 09/2020 – 02/2021
+    tech: [TypeScript, MongoDB, Node.js, GraphQL, Express.js, NestJS, Angular]
+    bullets:
+      - Generated over $40,000 in revenue within the first month via velocity as a service.
+      - Automated the manual frontend build process across 6 modules reducing build time by 1 hour.
+
+  - title: Visual Information Specialist
+    org: U.S. Geological Survey
+    dates: 04/2018 – 03/2020
+    tech: [Adobe Illustrator, Adobe Photoshop, Adobe InDesign, JavaScript]
+    bullets:
+      - Advanced publishing lifecycle of 30+ digital and print products, including a Congressional Circular.
+      - Built a website prototype allowing stakeholders to monitor the status of digital products.
+      - Created and administered the product brief for Section 508-compliant digital and print products.
+      - Established and administered the product review process for stakeholders across the organization.
+    images:
+      - src: /assets/images/resume/usgs-1.jpg
+        alt: Drinking Water Health Standards report cover
+      - src: /assets/images/resume/usgs-2.jpg
+        alt: Effective Solubility Assessment report cover
+      - src: /assets/images/resume/usgs-3.jpg
+        alt: Gap Analysis Project species richness maps cover
+      - src: /assets/images/resume/usgs-4.jpg
+        alt: Drought Forecasting fact sheet
+      - src: /assets/images/resume/usgs-5.jpg
+        alt: Geomorphic Characteristics of Tenmile Creek report cover
+
+  - title: Cavalry Scout
+    org: U.S. Army
+    dates: 02/2012 – 02/2015
+    bullets:
+      - Oversaw maintenance program for $2.3M+ in assets by developing operational readiness processes.
+      - Trained 3 team members on tactics and operations leading to a promotion for each.
+
+  - title: Professional Musician
+    org: Fools & Horses
+    dates: 04/2002 – 10/2011
+    bullets:
+      - Oversaw end-to-end launch of 4 products by managing external vendors and investors, delivering on time and within budget, while leading a merchandise redesign initiative driving over 200% revenue increase.
+      - Managed production logistics by sourcing and coordinating equipment, locations, and talent, while facilitating national media exposure on MTV, A&E, E!, Fuse TV, and NBC.
+      - Increased earnings by 10% through contract negotiation, international event logistics coordination, and campaign development including promotional content and market outreach.
+    images:
+      - src: /assets/images/resume/fools-and-horses-1.jpg
+        alt: Couple silhouetted at sunset
+      - src: /assets/images/resume/fools-and-horses-2.jpg
+        alt: Fools & Horses logo artwork
+      - src: /assets/images/resume/fools-and-horses-3.jpg
+        alt: I Am the Ghost album art
+      - src: /assets/images/resume/fools-and-horses-4.jpg
+        alt: Pop Filter album art
+      - src: /assets/images/resume/fools-and-horses-5.jpg
+        alt: Pop Filter Rethoughts album art
+
+education:
+  - title: Master of Business Administration
+    org: UMGC
+    note: GPA 4.0
+    description: Focus on finance, marketing, human resources, business law, strategy, and leadership.
+  - title: Bachelor of Science in Management Studies
+    org: UMGC
+    note: GPA 3.72
+    description: Business management principles focused on ethical decision making, problem solving, and leadership.
+  - title: Bachelor of Science in Digital Media & Web Technology
+    org: UMGC
+    note: Summa Cum Laude, GPA 4.0
+    description: Gained hands-on experience in web development, illustration, and photo manipulation.
+
+certifications:
+  - title: Agentic AI (currently pursuing)
+    org: Johns Hopkins University
+    description: 18-week curriculum focused on RAG, multi-agentic systems, and evaluation of agentic systems.
+  - title: Applied Data Science Program
+    org: MIT Professional Education
+    description: 12-week curriculum focused on practical data science, machine learning, and generative AI.
+  - title: AI & ML Technical Leadership Program
+    org: Codesmith
+    description: 4-week program, and ongoing leadership circle, for hands-on AI and ML development with business and ethics training.
+  - title: Professional Scrum Master II
+    org: Scrum.org
+    description: Gained depth of knowledge pertaining to the Scrum framework and its application.
+  - title: Professional Scrum Master I
+    org: Scrum.org
+    description: Gained depth of knowledge pertaining to the Scrum framework and its application.
+  - title: Advanced Software Engineering Immersive Program
+    org: Hack Reactor
+    description: 6-month full stack JavaScript development curriculum with lectures, pair programming, and mentorship.
+
+awards:
+  - title: Army Achievement Medal
+    org: U.S. Army
+    description: Awarded for exceeding Warrior Leader Course standards by demonstrating superior leadership and critical thinking skills in both professional and combat environments.
+  - title: Army Achievement Medal
+    org: U.S. Army
+    description: Awarded for maintaining high standards and influential leadership while in a combat zone.
+  - title: Combat Action Badge
+    org: U.S. Army
+    description: Afghanistan, 2013.
+
+projects:
+  - title: Dapper Applicant
+    org: YouTube
+    url: ''
+    description: Tailor your resume to specific job descriptions directly from a browser sidebar.
+  - title: AI Communication Coach
+    org: YouTube
+    url: ''
+    description: Communication coaching with simultaneous AI coach participants.
+  - title: Texting OpenAI
+    org: GitHub
+    url: ''
+    description: Text OpenAI a prompt to generate a response.
+
+publications:
+  - { title: 3 Chords, org: YouTube, url: '', description: Fools & Horses }
+  - { title: Fools & Horses, org: Spotify, url: '', description: Fools & Horses }
+  - { title: I Am the Ghost, org: Spotify, url: '', description: Fools & Horses }
+  - { title: Off the Clock, org: Apple Music, url: '', description: Starbucks }
+  - { title: 'Pop Filter: Rethoughts', org: Spotify, url: '', description: Fools & Horses }
+  - { title: Pop Filter, org: Spotify, url: '', description: Fools & Horses }
+  - { title: Saturday Morning, org: Spotify, url: '', description: Fools & Horses }
+
+footer: All opinions are my own

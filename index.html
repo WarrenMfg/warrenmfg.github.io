@@ -1,0 +1,93 @@
+---
+layout: default
+title: Resume
+hide_site_title: true
+---
+{% assign r = site.data.resume %}
+
+<div class="resume">
+
+  <header class="resume-hero">
+    {% include social-links.html %}
+    <img class="resume-photo" src="{{ r.photo | relative_url }}" alt="Portrait of {{ r.name }}">
+    <h1>{{ r.name }}</h1>
+    <p class="resume-tagline">{{ r.tagline | join: '<br>' }}</p>
+    <ul class="traits">
+      {% for trait in r.traits %}<li>{{ trait }}</li>{% endfor %}
+    </ul>
+    <blockquote class="career-goal">
+      <cite>Career Goal</cite>
+      {{ r.career_goal | join: '<br>' }}
+    </blockquote>
+  </header>
+
+  <div class="resume-section">
+    <h2>Experience</h2>
+
+    <div class="highlights">
+      <h3>Highlights</h3>
+      {% for group in r.highlights %}
+      <h4>{{ group.heading }}</h4>
+      <ul>
+        {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+
+    {% for job in r.experience %}
+    <article class="job">
+      <div class="job-heading">
+        <h3>{{ job.title }}</h3>
+        <span class="job-dates">{{ job.dates }}</span>
+      </div>
+      {% include badge.html text=job.org %}
+      {% if job.tech %}<p class="job-tech">{{ job.tech | join: ' · ' }}</p>{% endif %}
+      <ul>
+        {% for bullet in job.bullets %}<li>{{ bullet }}</li>{% endfor %}
+      </ul>
+      {% if job.images %}
+      <div class="carousel" tabindex="0" aria-label="{{ job.org }} work samples">
+        {% for image in job.images %}
+        <a href="{{ image.url | default: image.src | relative_url }}" target="_blank" rel="noopener">
+          <img src="{{ image.src | relative_url }}" alt="{{ image.alt }}" loading="lazy">
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>
+
+  <div class="resume-section">
+    <h2>Education</h2>
+    {% for item in r.education %}{% include resume-entry.html item=item %}{% endfor %}
+  </div>
+
+  <div class="resume-section">
+    <h2>Certifications</h2>
+    {% for item in r.certifications %}{% include resume-entry.html item=item %}{% endfor %}
+  </div>
+
+  <div class="resume-section">
+    <h2>Awards</h2>
+    {% for item in r.awards %}{% include resume-entry.html item=item %}{% endfor %}
+  </div>
+
+  <div class="resume-section">
+    <h2>Projects</h2>
+    {% for item in r.projects %}{% include resume-entry.html item=item %}{% endfor %}
+  </div>
+
+  <div class="resume-section">
+    <h2>Publications</h2>
+    <div class="publications">
+      {% for item in r.publications %}{% include resume-entry.html item=item %}{% endfor %}
+    </div>
+  </div>
+
+  <footer class="resume-footer">
+    {% include social-links.html %}
+    <p>{{ r.footer }}</p>
+  </footer>
+
+</div>
