@@ -1,0 +1,75 @@
+---
+---
+
+@import "jekyll-theme-midnight";
+
+// Site navigation: replaces Midnight's green buttons (and its stray blue nav background)
+#header {
+  height: 56px;
+
+  nav {
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: none;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 28px;
+      height: 56px;
+
+      li {
+        float: none;
+        display: block;
+        line-height: 56px;
+
+        a,
+        a:hover {
+          display: block;
+          padding: 0;
+          margin: 0;
+          border: 0;
+          border-bottom: 2px solid transparent;
+          border-radius: 0;
+          background: none;
+          box-shadow: none;
+          color: #b6b6b6;
+          font-size: 13px;
+          line-height: 54px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          transition: color 0.15s, border-color 0.15s;
+        }
+
+        a:hover {
+          color: #ffffff;
+        }
+
+        a.active {
+          color: #ffcc00;
+          border-bottom-color: #ffcc00;
+        }
+      }
+    }
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  #header {
+    margin-top: 0;
+
+    nav {
+      display: block;
+
+      ul {
+        justify-content: center;
+      }
+    }
+  }
+
+  section {
+    margin-top: 76px;
+  }
+}
