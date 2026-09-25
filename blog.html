@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="post-grid">
+  {% for post in site.posts %}
+  <a class="post-card" href="{{ post.url | relative_url }}">
+    <img class="post-card-image" src="{{ post.image | default: '/assets/images/post-placeholder.svg' | relative_url }}" alt="" loading="lazy">
+    <div class="post-card-body">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>
