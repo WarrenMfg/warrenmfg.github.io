@@ -1,0 +1,21 @@
+{% comment %} One carousel tile. See the media types at the top of
+_data/resume.yml. {% endcomment %} {% assign m = include.media %} {% case m.type
+%} {% when 'youtube' %} {% assign href = 'https://www.youtube.com/watch?v=' |
+append: m.source %} {% assign thumb = 'https://i.ytimg.com/vi/' | append:
+m.source | append: '/mqdefault.jpg' %} {% when 'github' %} {% assign href =
+'https://github.com/' | append: site.github_username | append: '/' | append:
+m.source %} {% assign thumb = '/assets/images/resume/' | append: m.source |
+append: '.jpeg' | relative_url %} {% else %} {% assign href =
+'/assets/images/resume/' | append: m.source | relative_url %} {% assign thumb =
+href %} {% endcase %}
+<a
+  class="media media-{{ m.type | default: 'img' }}"
+  href="{{ href }}"
+  target="_blank"
+  rel="noopener"
+  title="{{ m.title }}"
+>
+  <img src="{{ thumb }}" alt="{{ m.title }}" loading="lazy" />
+  {% if m.type == 'youtube' %}<span class="media-play" aria-hidden="true"></span
+  >{% endif %}
+</a>
