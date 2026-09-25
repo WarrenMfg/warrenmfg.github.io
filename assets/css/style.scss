@@ -1,7 +1,18 @@
 ---
 ---
 
-@import "jekyll-theme-midnight";
+@import 'jekyll-theme-midnight';
+
+// Remove Midnight's outer spacing (it reserved room for the fixed nav)
+body {
+  padding-bottom: 0;
+}
+
+section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 30px 0;
+}
 
 // Site navigation: replaces Midnight's green buttons (and its stray blue nav background)
 #header {
@@ -40,7 +51,9 @@
           line-height: 54px;
           letter-spacing: 0.12em;
           text-transform: uppercase;
-          transition: color 0.15s, border-color 0.15s;
+          transition:
+            color 0.15s,
+            border-color 0.15s;
         }
 
         a:hover {
@@ -77,7 +90,10 @@
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   color: inherit;
-  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+  transition:
+    transform 0.15s,
+    border-color 0.15s,
+    box-shadow 0.15s;
 
   &:hover {
     transform: translateY(-3px);
@@ -160,7 +176,10 @@
 .resume {
   --icon-cutout: #262626;
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: #e8e8e8;
   }
 }
@@ -355,8 +374,19 @@ a.badge:hover {
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
   scrollbar-color: #555 transparent;
-  -webkit-mask-image: linear-gradient(to right, #000 88%, transparent);
-  mask-image: linear-gradient(to right, #000 88%, transparent);
+  // Edge fades; assets/js/carousel.js toggles them based on scroll position
+  --fade-left: 0px;
+  --fade-right: 64px;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 var(--fade-left), #000 calc(100% - var(--fade-right)), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 var(--fade-left), #000 calc(100% - var(--fade-right)), transparent);
+
+  &.scrolled {
+    --fade-left: 64px;
+  }
+
+  &.at-end {
+    --fade-right: 0px;
+  }
 
   a {
     flex: 0 0 200px;
@@ -370,7 +400,9 @@ a.badge:hover {
     object-fit: cover;
     border: 1px solid #3a3a3a;
     border-radius: 6px;
-    transition: border-color 0.15s, transform 0.15s;
+    transition:
+      border-color 0.15s,
+      transform 0.15s;
   }
 
   a:hover img {
@@ -429,9 +461,5 @@ a.badge:hover {
         justify-content: center;
       }
     }
-  }
-
-  section {
-    margin-top: 76px;
   }
 }
