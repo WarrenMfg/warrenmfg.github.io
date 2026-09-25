@@ -38,7 +38,9 @@ hide_site_title: true
     <article class="job">
       <div class="job-heading">
         <h3>{{ job.title }}</h3>
-        <span class="job-dates">{{ job.dates }}</span>
+        {% comment %} Each side of "MM/YYYY – MM/YYYY" gets its own <time>, so iOS browsers don't read the range as a phone number {% endcomment %}
+        {% assign range = job.dates | split: '–' %}
+        <span class="job-dates">{% for side in range %}{% assign d = side | strip %}{% assign parts = d | split: '/' %}<time{% if parts.size == 2 %} datetime="{{ parts[1] }}-{{ parts[0] }}"{% endif %}>{{ d }}</time>{% unless forloop.last %} – {% endunless %}{% endfor %}</span>
       </div>
       {% include badge.html text=job.org %}
       {% if job.tech %}<p class="job-tech">{{ job.tech | join: ' · ' }}</p>{% endif %}
