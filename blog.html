@@ -12,7 +12,7 @@ blog: true
     <div class="post-card-body">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
       <h3>{{ post.title }}</h3>
-      <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+      <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}</p>
     </div>
   </a>
   {% endfor %}

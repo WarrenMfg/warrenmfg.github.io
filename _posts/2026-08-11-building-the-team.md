@@ -3,9 +3,19 @@ title: 'Building the Team'
 date: 2026-08-11 12:00:00 -0400
 image: /assets/images/team-building.webp
 image_alt: Group of young professionals brainstorming ideas in a modern office environment.
+description: 'Build an innovation team: compare team structures, balance size and diversity, define roles, recruit volunteers, choose leaders, foster psychological safety, and set a cadence.'
 ---
 
-Every innovation framework has to answer a deceptively simple question before a single idea is generated: who is going to do the work? This article covers standing up the team -- its structure, size, mix of people, roles, recruitment model, leadership, working climate, and rhythm. High-performing innovation teams rarely happen by accident; they come from a combination of selection and investment in team building, clear guidance on roles and tasks, and attention to group process as well as the task itself (Tidd & Bessant, 2018, p. 194). Teams are also not automatically the answer, because nominal teams weighed down by unresolved conflicts, personality clashes, or weak group processes can lose effectiveness (Tidd & Bessant, 2018, p. 194).
+# Summary
+
+- **Design the team on purpose.** High-performing innovation teams rarely happen by accident; they come from selection, investment in team building, and clear guidance on roles and tasks (Tidd & Bessant, 2018, p. 194).
+- **Match structure to how new the work is.** The newer the innovation, the more autonomous the team should be (van den Ende, 2021, p. 155), while incremental work suits functional or lightweight teams (van den Ende, 2021, p. 156).
+- **Keep it small and deliberately diverse.** About ten people is the ideal (Benraouane & Harrington, 2021, p. 141), and talented but similar teams performed below mixed, average groups in one noted experiment (Tidd & Bessant, 2018, p. 195). People default to homogeneity, so the person forming the team must build diversity on purpose (Benraouane & Harrington, 2021, p. 141).
+- **Name the roles, and watch for champions attached to pet ideas.** Secure a sponsor with the power to remove obstacles (Tidd & Bessant, 2018, p. 179), and document who does what once the initiative takes off (Benraouane & Harrington, 2021, p. 188). A technical champion may not be prepared to let go of a pet idea (Tidd & Bessant, 2018, p. 179).
+- **Recruit against explicit criteria.** Interesting initiatives attract everyone and uninteresting ones attract no volunteers, so define selection criteria up front (Benraouane & Harrington, 2021, p. 187).
+- **Free the leader, and choose for expertise.** At a minimum, the team leader should be single-threaded, not splitting the week with other projects (MIT Sloan Management Review, 2023, p. 30). No universal list of leader traits exists (Bessant & Tidd, 2015, p. 267), but expertise plus cognitive-processing skills matter (Bessant & Tidd, 2015, p. 268).
+- **Invest in psychological safety, and measure it.** Project Aristotle found it the strongest predictor of team success (Benraouane & Harrington, 2021, p. 142). A ten-item team check, scored 1 to 5 by each member, gives a baseline (Goller & Bessant, 2017, p. 142).
+- **Set a cadence with visible checkpoints.** Innovation boards typically review funded teams every 30, 60, or 90 days (MIT Sloan Management Review, 2023, p. 31), and without a sustaining program the initial surge of ideas tends to ebb (Bessant, 2009, p. 60).
 
 # Choosing a structure
 
