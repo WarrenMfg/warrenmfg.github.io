@@ -34,10 +34,10 @@ theme: jekyll-theme-midnight
 # false: hide the nav, and redirect blog URLs to the resume.
 # When flipping this, also toggle `- jekyll-feed` under plugins below
 # (uncommented = /feed.xml is published).
-show_blog: true
+show_blog: false
 
 plugins:
-  - jekyll-feed # RSS feed at /feed.xml; uncomment when show_blog is true
+  # - jekyll-feed # RSS feed at /feed.xml; uncomment when show_blog is true
 
 # Every post uses the post layout (with hero image) and lives under /blog/
 defaults:
