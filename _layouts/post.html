@@ -14,3 +14,5 @@ layout: default
 
   <p class="post-back"><a href="{{ '/blog/' | relative_url }}">&larr; All posts</a></p>
 </article>
+
+{% if page.extra_js %}<script defer src="{{ page.extra_js | relative_url }}"></script>{% endif %}

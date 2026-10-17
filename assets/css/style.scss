@@ -144,6 +144,52 @@ section {
     font-size: 14px;
     line-height: 1.5;
   }
+
+  // Pinned post: spans the full grid like a hero, with a larger title,
+  // a permanent yellow outline, and a "Featured" badge over the image
+  &--featured {
+    position: relative;
+    grid-column: 1 / -1;
+    border-color: #ffcc00;
+
+    .post-card-pin {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      color: #ffcc00;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: rgba(28, 28, 28, 0.85);
+      border: 1px solid #ffcc00;
+      border-radius: 999px;
+
+      svg {
+        transform: rotate(30deg);
+      }
+    }
+
+    .post-card-image {
+      aspect-ratio: 2 / 1;
+    }
+
+    .post-card-body {
+      padding: 20px 22px 24px;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
 }
 
 // Single post: hero image and header

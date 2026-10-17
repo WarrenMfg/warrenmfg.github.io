@@ -4,6 +4,11 @@ head-custom-google-analytics.html %}
 
 <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any" />
 
+{% comment %} Per-page stylesheet for posts with custom layouts (front matter
+`extra_css`) {% endcomment %} {% if page.extra_css %}
+<link rel="stylesheet" href="{{ page.extra_css | relative_url }}" />
+{% endif %}
+
 <!-- Stop iOS Safari from turning date ranges like "10/2013 – 12/2025" into phone links -->
 <meta name="format-detection" content="telephone=no" />
 
