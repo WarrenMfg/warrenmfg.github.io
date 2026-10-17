@@ -9,11 +9,6 @@
   --loop-border: #3a3a3a;
   --loop-surface: #2b2b2b;
   --loop-field: #1c1c1c;
-  --loop-band: #f0e7d5;
-  --loop-band-text: #1c1c1c;
-  --loop-band-line: rgba(28, 28, 28, 0.25);
-  --loop-band-muted: #6b6150;
-  --loop-band-accent: #8a5a00;
   --loop-nav-height: 48px;
   color: var(--loop-text);
 }
@@ -248,8 +243,8 @@
   font-size: 12px;
 }
 
-/* Movements: one cream card per movement (name, question, evidence bar, implementation
-   details), echoing the original page's loop band against the dark page */
+/* Movements: one card per movement (name, question, evidence bar, implementation details).
+   A raised dark surface with a yellow left edge sets them off from the page. */
 .loop-post .movements {
   display: grid;
   gap: 16px;
@@ -258,26 +253,29 @@
 
 .loop-post .movement {
   padding: 20px 22px 0;
-  color: var(--loop-band-text);
-  background: var(--loop-band);
+  background: var(--loop-surface);
+  border: 1px solid var(--loop-border);
+  border-left: 3px solid var(--loop-primary);
   border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .loop-post .movement-num {
   font-size: 11px;
   letter-spacing: 0.1em;
-  color: var(--loop-band-accent);
+  color: var(--loop-primary);
 }
 
 .loop-post .movement h3 {
   margin: 4px 0 6px;
   font-size: 20px;
-  color: var(--loop-band-text);
+  color: var(--loop-text);
 }
 
 .loop-post .movement-question {
   margin-bottom: 12px;
   font-size: 15px;
+  color: var(--loop-muted);
 }
 
 .loop-post .movement-evidence {
@@ -291,37 +289,17 @@
   font-size: 11px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--loop-band-muted);
+  color: var(--loop-faint);
 }
 
 .loop-post .movement details,
 .loop-post .movement details:last-child {
-  border-top-color: var(--loop-band-line);
   border-bottom: 0;
 }
 
 .loop-post .movement summary {
   min-height: 52px;
   font-size: 14px;
-  color: var(--loop-band-text);
-}
-
-.loop-post .movement summary::after,
-.loop-post .movement summary:hover,
-.loop-post .movement a {
-  color: var(--loop-band-accent);
-}
-
-.loop-post .movement a:hover {
-  color: var(--loop-band-text);
-}
-
-.loop-post .movement .prose ul {
-  list-style: disc;
-}
-
-.loop-post .movement :focus-visible {
-  outline-color: var(--loop-band-accent);
 }
 
 /* Disclosures: + / − markers */
@@ -363,6 +341,12 @@
 
 .loop-post summary:hover {
   color: var(--loop-primary);
+}
+
+/* Worked example sits between the movement cards and the five rules */
+.loop-post .worked-example {
+  margin-top: 24px;
+  border-bottom: 1px solid var(--loop-border);
 }
 
 /* Breathing room when an accordion directly follows a block of prose */
@@ -618,11 +602,27 @@
   display: none;
 }
 
+/* Framework takeaway: a tinted callout, distinct from the yellow-edged movement cards */
 .loop-post .closing {
-  margin-block: 40px 12px;
-  font-size: 22px;
-  line-height: 1.3;
+  max-width: none;
+  margin-block: 40px 0;
+  padding: 18px 22px;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--loop-text);
+  background: rgba(255, 204, 0, 0.07);
+  border: 1px solid rgba(255, 204, 0, 0.35);
+  border-radius: 6px;
+}
+
+.loop-post .closing::before {
+  content: 'Takeaway';
+  display: block;
+  margin-bottom: 6px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--loop-primary);
 }
 
 .loop-post .loop-footer {
