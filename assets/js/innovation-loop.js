@@ -23,11 +23,11 @@
       setTimeout(() => (status.textContent = ''), 3000),
     );
   }
-  async function copyText(text, status, fallback) {
+  async function copyText(text, status, successMessage, fallback) {
     try {
       if (!navigator.clipboard?.writeText) throw Error('Clipboard not available');
       await navigator.clipboard.writeText(text);
-      showStatus(status, 'Copied. Citations and source URLs are included.');
+      showStatus(status, successMessage);
     } catch (e) {
       if (fallback) {
         fallback.hidden = false;
@@ -40,22 +40,16 @@
       }
     }
   }
-  root.querySelector('#copy-summary').addEventListener('click', () =>
-    copyText(
-      root.querySelector('#summary-text').value,
-      root.querySelector('#summary-status'),
-      root.querySelector('#summary-fallback'),
-    ),
-  );
   root.querySelector('#copy-templates').addEventListener('click', () =>
     copyText(
       root.querySelector('#template-text').value,
       root.querySelector('#template-status'),
+      'Copied. Paste the three records into the tools you already use.',
       root.querySelector('#template-fallback'),
     ),
   );
   root.querySelectorAll('.copy-url').forEach((b) =>
-    b.addEventListener('click', () => copyText(b.dataset.url, b.nextElementSibling)),
+    b.addEventListener('click', () => copyText(b.dataset.url, b.nextElementSibling, 'Copied.')),
   );
 
   // Section nav: highlight the section currently in view
