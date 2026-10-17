@@ -50,10 +50,6 @@
   margin-bottom: 12px;
 }
 
-.loop-post .thesis {
-  color: var(--loop-muted);
-}
-
 .loop-post .eyebrow {
   display: block;
   font-size: 11px;
@@ -266,7 +262,7 @@
   color: var(--loop-primary);
 }
 
-.loop-post .movement h3 {
+.loop-post .movement h4 {
   margin: 4px 0 6px;
   font-size: 20px;
   color: var(--loop-text);
