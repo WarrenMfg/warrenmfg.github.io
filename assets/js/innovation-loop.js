@@ -1,30 +1,10 @@
-// Interactivity for The Innovation Loop post: phase accordions, copy buttons, and section nav.
+// Interactivity for The Innovation Loop post: hash-opened accordions, copy buttons, and section nav.
 // Every query is scoped to .loop-post so the site's own nav is untouched.
 (function () {
   const root = document.querySelector('.loop-post');
   if (!root) return;
 
-  // Phase accordions: "Expand all four" toggle, kept in sync with individual toggles
-  const phaseDetails = [...root.querySelectorAll('.phase')];
-  const expand = root.querySelector('#expand-phases');
-  function syncExpand() {
-    const allOpen = phaseDetails.every((d) => d.open);
-    expand.textContent = allOpen ? 'Collapse all four' : 'Expand all four';
-    expand.setAttribute('aria-expanded', String(allOpen));
-  }
-  expand.addEventListener('click', () => {
-    const open = !phaseDetails.every((d) => d.open);
-    phaseDetails.forEach((d) => (d.open = open));
-    syncExpand();
-  });
-  phaseDetails.forEach((d) => d.addEventListener('toggle', syncExpand));
-
-  // Loop items open their phase; a #phase-n hash opens it too
-  root.querySelectorAll('[data-open]').forEach((a) =>
-    a.addEventListener('click', () => {
-      document.getElementById(a.dataset.open).open = true;
-    }),
-  );
+  // A hash pointing at an accordion (e.g. #phase-2) opens it
   function openHash() {
     const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
     if (el && el.tagName === 'DETAILS' && root.contains(el)) el.open = true;

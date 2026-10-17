@@ -12,14 +12,14 @@ pinned: true
 <div class="loop-post">
 <div class="intro"><span class="eyebrow">Applied innovation management / AI products</span><p class="deck">A lightweight framework for discovering and delivering AI-enabled products and services.</p><p class="thesis">Increase commitment as evidence improves.<br>Keep ownership continuous from discovery to real use.</p></div>
 <div class="meta"><span>Version 1.0</span><span>Evidence-informed proposal, not a validated method</span></div>
-<nav class="loop-nav" aria-label="Post sections"><a href="#summary">Summary</a><a href="#guide">The guide</a><a href="#measures">Measures</a><a href="#evidence">Evidence</a><a href="#use-it">Use it</a></nav>
+<nav class="loop-nav" aria-label="Post sections"><a href="#summary">Summary</a><a href="#framework">Framework</a><a href="#measures">Measures</a><a href="#evidence">Evidence</a></nav>
 <section id="summary" class="section "><div class="sectionhead"><span class="eyebrow">THE EXECUTIVE SUMMARY</span><h2>AI makes building easier.<br>Does it make innovation better?</h2></div><div class="reading prose summary-copy"><p>An impressive AI demo answers “Can we build this?” Innovation asks a harder question: “Should this become a product, and what would persuade us otherwise?” The difference is a repeatable way to turn curiosity into testable claims, and testable claims into accountable investment.</p>
 <p>The opportunity is substantial, but conditional. In a randomized experiment with 453 professionals, ChatGPT reduced time on specified writing tasks by <strong>40%</strong> and increased rated output quality by <strong>18%</strong>; those results concern bounded writing tasks, not enterprise-wide productivity or profit. (<a target="_blank" rel="noopener noreferrer" href="https://www.science.org/doi/10.1126/science.adh2586">Noy &amp; Zhang, 2023</a>) In a published field study of 5,172 customer-support agents, an AI assistant increased issues resolved per hour by <strong>15% on average</strong>, with substantial differences by worker experience and skill; the staggered-rollout study was not a randomized trial. (<a target="_blank" rel="noopener noreferrer" href="https://academic.oup.com/qje/article/140/2/889/7990658">Brynjolfsson et al., 2025</a>)</p>
 <p>There is an equally important counterweight. A meta-analysis of 106 experimental studies found that human-AI teams performed somewhat worse, on average, than whichever was better alone: the human or the AI. Because the studies measured different tasks, the authors report the gap in standard deviations rather than percentages: Hedges’ g = <strong>−0.23</strong>, a small effect, with a 95% confidence interval of −0.39 to −0.07. The whole interval sits below zero, so the shortfall is modest but unlikely to be zero; it is not a 23% productivity decline. (<a target="_blank" rel="noopener noreferrer" href="https://www.nature.com/articles/s41562-024-02024-1">Vaccaro et al., 2024</a>) A 2026 reanalysis of 74 relevant studies identified feedback and human learning as promising moderators, but explicitly called for experiments before drawing stronger causal conclusions. (<a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/42766752/">Berger et al., 2026</a>)</p>
 </div><div class="study-strip" aria-label="Three findings that motivate the framework"><article><b class="stat">40%</b><p>Less time on specified writing tasks; rated quality increased 18%. Randomized experiment, 453 professionals.</p><a href="https://www.science.org/doi/10.1126/science.adh2586" target="_blank" rel="noopener noreferrer">Noy & Zhang, 2023</a></article><article><b class="stat">15%</b><p>More issues resolved per hour in a support-agent field study. Staggered rollout, 5,172 agents.</p><a href="https://academic.oup.com/qje/article/140/2/889/7990658" target="_blank" rel="noopener noreferrer">Brynjolfsson et al., 2025</a></article><article><b class="stat">−0.23</b><p>Pooled standardized human-AI synergy effect versus the better-alone baseline. Not a 23% decline; 95% CI [−0.39, −0.07].</p><a href="https://www.nature.com/articles/s41562-024-02024-1" target="_blank" rel="noopener noreferrer">Vaccaro et al., 2024</a></article></div><div class="reading prose summary-copy"><p>The Innovation Loop turns that tension into four practical movements:</p>
 <ul>
 <li><strong>Frame together:</strong> Select a consequential user problem, name its eventual owner, and compare AI with the current workflow and a credible simpler alternative.</li>
-<li><strong>Test the uncertainty:</strong> Write down what success and failure mean before prototyping. Test the weakest assumption, not just the easiest capability to demonstrate.</li>
+<li><strong>Test the uncertainty:</strong> Write down what success and failure mean before prototyping. Test the riskiest assumption, not just the easiest capability to demonstrate.</li>
 <li><strong>Commit and deliver:</strong> Make an explicit stop, revise, pilot, or scale decision. Transfer operational responsibility through shared work and acceptance, not a presentation alone.</li>
 <li><strong>Learn and compound:</strong> Measure actual use, quality, cost, and harm. Feed failures into evaluations and teach the method using evidence, including stopped bets.</li>
 </ul>
@@ -34,7 +34,7 @@ There is an equally important counterweight. A meta-analysis of 106 experimental
 The Innovation Loop turns that tension into four practical movements:
 
 - **Frame together:** Select a consequential user problem, name its eventual owner, and compare AI with the current workflow and a credible simpler alternative.
-- **Test the uncertainty:** Write down what success and failure mean before prototyping. Test the weakest assumption, not just the easiest capability to demonstrate.
+- **Test the uncertainty:** Write down what success and failure mean before prototyping. Test the riskiest assumption, not just the easiest capability to demonstrate.
 - **Commit and deliver:** Make an explicit stop, revise, pilot, or scale decision. Transfer operational responsibility through shared work and acceptance, not a presentation alone.
 - **Learn and compound:** Measure actual use, quality, cost, and harm. Feed failures into evaluations and teach the method using evidence, including stopped bets.
 
@@ -42,38 +42,51 @@ The aim is not to maximize ideas, demos, approvals, or even launches. It is to m
 
 This is not an argument for more committees. It is a proposal for four movements, three living records, and five rules, usable by a small team and extensible to enterprise governance. The practical invitation is to try one bounded opportunity, preserve the evidence, and evaluate the framework itself rather than assuming the framework works.</textarea></div></div></section>
 
-<section id="guide" class="section "><div class="sectionhead"><span class="eyebrow">THE FRAMEWORK</span><h2>Four movements.<br>Not four departments.</h2></div><div class="loop"><div class="loop-top"><span>THE MINIMAL OPERATING MODEL</span><span>One continuous owner. Repeated learning.</span></div><div class="loop-track"><a class="loop-item" href="#phase-1" data-open="phase-1"><span class="loop-num">01 →</span><b>Frame together</b><span>Is this a problem worth testing?</span></a><a class="loop-item" href="#phase-2" data-open="phase-2"><span class="loop-num">02 →</span><b>Test the uncertainty</b><span>What could change the decision?</span></a><a class="loop-item" href="#phase-3" data-open="phase-3"><span class="loop-num">03 →</span><b>Commit and deliver</b><span>Can we own this responsibly?</span></a><a class="loop-item" href="#phase-4" data-open="phase-4"><span class="loop-num">04 →</span><b>Learn and compound</b><span>Did value survive real use?</span></a></div><p class="loop-return"><span aria-hidden="true">↶</span> Return whenever evidence changes the problem, solution, or investment.</p></div><div class="guide-layout"><aside class="guide-aside"><p><b>5 rules</b>Minimum commitments</p><p><b>4 accountabilities</b>No new job titles</p><p><b>3 records</b>Existing tools are enough</p></aside><div class="guide-main"><div class="prose"><div class="table-scroll" tabindex="0" role="region" aria-label="Reference table; entries stack on mobile"><table>
-<thead>
-<tr>
-<th>Movement</th>
-<th>The question</th>
-<th>Minimum evidence to move forward</th>
-</tr>
-</thead>
-<tbody><tr>
-<td data-label="Movement">Frame together</td>
-<td data-label="The question">Is this a problem worth testing?</td>
-<td data-label="Minimum evidence to move forward">Named user and owner, observable problem, baseline, riskiest assumption, authorized experiment</td>
-</tr>
-<tr>
-<td data-label="Movement">Test the uncertainty</td>
-<td data-label="The question">Does the proposed solution merit exposure to users?</td>
-<td data-label="Minimum evidence to move forward">Prototype evidence against predefined criteria, cost range, failure analysis, bounded pilot plan</td>
-</tr>
-<tr>
-<td data-label="Movement">Commit and deliver</td>
-<td data-label="The question">Can we responsibly own this in use?</td>
-<td data-label="Minimum evidence to move forward">Explicit investment decision, accepted ownership, risk review, monitoring and rollback</td>
-</tr>
-<tr>
-<td data-label="Movement">Learn and compound</td>
-<td data-label="The question">Did value survive real use?</td>
-<td data-label="Minimum evidence to move forward">Measured outcomes, adverse effects, operating cost, next decision, reusable learning</td>
-</tr>
-</tbody></table></div>
-<p>These are movements, not waterfall departments. Return to earlier work whenever evidence changes the problem, solution, or investment case; Tidd and Bessant explicitly describe innovation as a repeated cycle rather than a neatly linear event. (<a target="_blank" rel="noopener noreferrer" href="https://cashmere.io/v/YnjF1GNIs">Tidd &amp; Bessant, 2024, ch. 3</a>)</p>
-<p>The minimal specification below is a proposed design. Its exact team size, record count, review structure, and cadence are not research-derived optima, and the cited literature does not validate this particular combination.</p>
-</div><h3>Five rules</h3><div class="prose"><ul>
+<section id="framework" class="section"><div class="sectionhead"><span class="eyebrow">THE FRAMEWORK</span><h2>Four movements.<br>Not four departments.</h2></div><div class="prose"><p>The model rests on one continuous owner and repeated learning. These are movements, not waterfall departments. Return to earlier work whenever evidence changes the problem, solution, or investment case; Tidd and Bessant explicitly describe innovation as a repeated cycle rather than a neatly linear event. (<a target="_blank" rel="noopener noreferrer" href="https://cashmere.io/v/YnjF1GNIs">Tidd &amp; Bessant, 2024, ch. 3</a>)</p>
+<p>The minimal specification below is a proposed design. Its exact team size, record count, review structure, and cadence are not research-derived optima, and the cited literature does not validate this particular combination.</p></div>
+<div class="movements">
+<div class="movement"><span class="movement-num">01</span><h3>Frame together</h3><p class="movement-question">Is this a problem worth testing?</p><p class="movement-evidence"><span>Minimum evidence to move forward</span>Named user and owner, observable problem, baseline, riskiest assumption, authorized experiment</p><details id="phase-1" class="phase"><summary>How to run it</summary><div class="prose"><p><strong>Purpose:</strong> Find an important uncertainty worth paying to reduce. Begin with the product or service owner, not with a finished concept looking for a home.</p>
+<ul>
+<li><strong>Discover the work:</strong> Observe users, examine workflow data and existing complaints, identify workarounds, and distinguish the expressed request from the underlying task. Record access limits and whose perspective is missing.</li>
+<li><strong>Form alternatives:</strong> Generate candidate approaches independently before pooling them; include a process change, a deterministic solution, or an existing product when plausible. Use AI to widen and challenge the set, not to create a false impression of independent agreement.</li>
+<li><strong>Define the test:</strong> Select a primary user outcome, a baseline, a credible comparator, a failure condition, and the cheapest ethical test of the highest-consequence assumption. Establish authorized data use and the boundaries of the experiment.</li>
+</ul>
+<p>The independent-ideation suggestion is a design precaution, not a proven optimal workshop format. It responds to an experiment in short-story writing where AI assistance improved individual evaluations but made the stories more similar to each other; that finding does not establish that AI reduces product-innovation diversity in every setting. (<a target="_blank" rel="noopener noreferrer" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11244532/">Doshi &amp; Hauser, 2024</a>)</p>
+<p><strong>Exit decision:</strong> The outcome owner and delegated investment authority authorize a bounded experiment, revise the opportunity, or stop. The opportunity card should be understandable without a slide deck.</p>
+</div></details></div>
+<div class="movement"><span class="movement-num">02</span><h3>Test the uncertainty</h3><p class="movement-question">Does the proposed solution merit exposure to users?</p><p class="movement-evidence"><span>Minimum evidence to move forward</span>Prototype evidence against predefined criteria, cost range, failure analysis, bounded pilot plan</p><details id="phase-2" class="phase"><summary>How to run it</summary><div class="prose"><p><strong>Purpose:</strong> Produce evidence that can change the decision. Refine the proposal and build the prototype together rather than requiring a detailed business case before learning anything.</p>
+<ul>
+<li><strong>Write the evaluation contract:</strong> Define the population, unit of analysis, current workflow, comparator, primary measure, meaningful improvement, guardrails, sample rationale, and analysis/stopping plan. Separate qualitative discovery from confirmatory claims.</li>
+<li><strong>Build the smallest useful test:</strong> Use a mock-up, concierge workflow, offline model comparison, retrieval experiment, or bounded working prototype according to the uncertainty. Avoid unnecessary agents, integrations, or model training.</li>
+<li><strong>Evaluate the whole experience:</strong> Test task completion, human correction effort, unacceptable errors, latency, and total cost, not just model output. Where appropriate and safe, compare human-only, AI-only, and human-AI performance on the same task.</li>
+<li><strong>Challenge the result:</strong> Use representative cases and an untouched final test set; examine relevant user and task slices. For temporal predictions, respect time ordering and prevent leakage; for generative systems, include groundedness, abstention, and adversarial cases.</li>
+<li><strong>Update the investment case:</strong> Show downside, base, and upside scenarios, with assumptions for adoption, integration, review, inference, maintenance, and error costs. Distinguish a forecast from an observed benefit.</li>
+</ul>
+<p>Application-specific evaluation, factual consistency, cost, and latency are explicit concerns in Huyen’s AI engineering treatment; NIST also cautions that laboratory and benchmark performance may not extrapolate to real use. (<a target="_blank" rel="noopener noreferrer" href="https://www.oreilly.com/library/view/ai-engineering/9781098166298/ch04.html">Huyen, 2025, ch. 4</a>, <a target="_blank" rel="noopener noreferrer" href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958388">NIST, 2024</a>) The statistical-learning textbook provides the methodological foundation for model assessment, resampling, and multiple testing, rather than a universal sample size for this framework. (<a target="_blank" rel="noopener noreferrer" href="https://link.springer.com/book/10.1007/978-3-031-38747-0">James et al., 2023</a>)</p>
+<p><strong>Exit decision:</strong> Stop, revise, or authorize a bounded pilot. An inconclusive result calls for an explicit choice about whether more information is worth its cost, not an automatic declaration of success or failure.</p>
+</div></details></div>
+<div class="movement"><span class="movement-num">03</span><h3>Commit and deliver</h3><p class="movement-question">Can we responsibly own this in use?</p><p class="movement-evidence"><span>Minimum evidence to move forward</span>Explicit investment decision, accepted ownership, risk review, monitoring and rollback</p><details id="phase-3" class="phase"><summary>How to run it</summary><div class="prose"><p><strong>Purpose:</strong> Turn a supported proposition into an owned, controlled product or service. A good demo alone is not evidence that the organization can operate it.</p>
+<ul>
+<li><strong>Present the decision, not the theater:</strong> State the problem, alternatives, strongest evidence and counterevidence, uncertainty, economics, risks, and precise resource request. Use an existing product review; require an executive presentation only when the decision exceeds delegated authority.</li>
+<li><strong>Pilot with controls:</strong> Define who is exposed, what the system may do, the monitoring owner, incident route, and conditions for pause or rollback. Use shadow evaluation or controlled release where appropriate; shadow mode does not test every user-interaction effect.</li>
+<li><strong>Accept together:</strong> The owner, builders, and relevant reviewers walk through the code or prototype, data rights and lineage, prompts/model versions, evaluations, known failures, instrumentation, support, and dependencies.</li>
+<li><strong>Commit to delivery capacity:</strong> Name the delivery team and funded roadmap or backlog commitment. If another team will continue the work, require explicit acceptance and overlap; a handoff is not complete because a document was sent.</li>
+</ul>
+<p>For agentic services, restrict tool permissions, isolate tests, log actions, and require appropriate human authorization for consequential actions. These are risk controls informed by NIST’s treatment of security, prompt injection, monitoring, and human-AI configurations, not a claim that a checklist can guarantee safety. (<a target="_blank" rel="noopener noreferrer" href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958388">NIST, 2024</a>)</p>
+<p><strong>Exit decision:</strong> The owner accepts the bounded service; the investment authority approves the relevant commitment; required risk reviewers approve within their remit. Unknowns stay visible on the ownership card, with an owner and next review.</p>
+</div></details></div>
+<div class="movement"><span class="movement-num">04</span><h3>Learn and compound</h3><p class="movement-question">Did value survive real use?</p><p class="movement-evidence"><span>Minimum evidence to move forward</span>Measured outcomes, adverse effects, operating cost, next decision, reusable learning</p><details id="phase-4" class="phase"><summary>How to run it</summary><div class="prose"><p><strong>Purpose:</strong> Establish whether the proposition produces durable value in use, and improve both the service and the method. Delivery is a beginning of measurement, not the end of innovation.</p>
+<ul>
+<li><strong>Measure in use:</strong> Compare outcomes with the baseline or a suitable control; distinguish availability, exposure, trial, repeat use, and successful task completion. Treat clicks, edits, and satisfaction as signals requiring interpretation, not direct proof of value.</li>
+<li><strong>Watch degradation:</strong> Monitor outcome quality, cost, latency, data changes, incidents, and user workarounds. Re-evaluate after changes to data, models, prompts, retrieval, or tools; versioning and continuous monitoring are core MLOps concerns. (<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2205.02302">Kreuzberger et al., 2023</a>)</li>
+<li><strong>Retrospect privately and together:</strong> Offer confidential one-to-one feedback as well as a team discussion. Select one or two changes to the next iteration and assign an owner; do not turn the retrospective into a mandatory ritual without an improvement decision.</li>
+<li><strong>Teach with evidence:</strong> Use a roadshow containing a successful case, a stopped case, costs, limitations, and reusable evaluations. For train-the-trainer adoption, progress from observation to co-facilitation to independently facilitated work reviewed against the same record requirements.</li>
+<li><strong>Govern a portfolio only when needed:</strong> Review strategic fit, evidence strength, shared dependencies, cumulative exposure, operating burden, and resources across bets. Compare within appropriate maturity and risk categories; do not rank an exploratory option against a mature product using a single ROI score.</li>
+</ul>
+<p><strong>Exit decision:</strong> Continue, change, expand, retire, or return to discovery. Keep a subsequent value-review date even when the next facilitation cycle has already begun.</p>
+</div></details></div>
+</div>
+<h3>Five rules</h3><div class="prose"><ul>
 <li><strong>Start with an outcome, not an AI requirement:</strong> State whose task should improve, against what alternative, and why AI might be necessary. “No AI” remains an acceptable answer.</li>
 <li><strong>Make claims falsifiable:</strong> Record the hypothesis, comparison, success criteria, guardrails, and stop conditions before reviewing results. Label later exploratory findings as exploratory.</li>
 <li><strong>Match permission to risk:</strong> Do not treat approval to explore as approval to expose private data, affect users, or deploy autonomous actions.</li>
@@ -91,50 +104,56 @@ This is not an argument for more committees. It is a proposal for four movements
 <p>A small team may combine accountabilities; higher-risk decisions should receive independent review. As a starting configuration, try four to seven active contributors with named specialist access, then adjust to the work rather than treating headcount as a success condition.</p>
 <p>Recruit volunteers for interest where useful, but obtain explicit manager agreement on protected capacity, availability, and replacement coverage. Include different functional expertise and direct access to affected users; do not assume that nominal diversity, volunteer enthusiasm, or membership in a data science function automatically provides AI product delivery capability.</p>
 <p>This cross-functional emphasis is consistent with MLOps research identifying business, data science, data engineering, software, and operations roles, together with collaboration and continuous feedback. (<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2205.02302">Kreuzberger et al., 2023</a>)</p>
-</div><h3>Three living records</h3><div class="prose">
-<ul>
-<li><strong>Opportunity card:</strong> User problem, baseline, intended outcome, alternatives, owner, strategic fit, assumptions, data constraints, capacity, and experiment authorization.</li>
-<li><strong>Evidence log:</strong> Hypotheses, evaluation plan, dataset and system versions, test results, uncertainty, costs, dissent, and the dated decision. A linked repository or existing experimentation tool is sufficient.</li>
-<li><strong>Ownership card:</strong> Accepted scope, service owner, dependencies, release safeguards, support, monitoring, rollback, realized-value review, and unresolved risks.</li>
+</div><h3>Three living records</h3><div class="prose"><p>Use existing tools. These are information requirements, not mandatory documents, software purchases, or additional approval forms.</p></div><div class="template-wrap"><div class="records"><details><summary><span>Opportunity card<span class="record-use">Opened in Frame together; it authorizes the first experiment.</span></span></summary><div class="prose"><ul>
+<li><strong>User and task:</strong> Who is trying to do what, in which context?</li>
+<li><strong>Observed problem:</strong> What evidence indicates a meaningful unmet need?</li>
+<li><strong>Baseline and alternatives:</strong> Current workflow; credible non-AI or simpler approach.</li>
+<li><strong>Outcome and hypothesis:</strong> What should improve, for whom, and why?</li>
+<li><strong>People and authority:</strong> Outcome owner; builders; facilitator; investment authority.</li>
+<li><strong>Constraints:</strong> Capacity, authorized data, rights, dependencies, risk boundaries.</li>
+<li><strong>Next test:</strong> Riskiest assumption; test cost cap; date of decision.</li>
 </ul>
-<p>Use existing tools. These are information requirements, not mandatory documents, software purchases, or additional approval forms.</p>
-</div><div class="phase-grid"><div class="section-actions"><p>Open a movement for implementation details.</p><button id="expand-phases" class="textbutton" type="button" aria-expanded="false">Expand all four</button></div><details id="phase-1" class="phase"><summary><span><span class="phase-number">01</span>Frame together</span></summary><div class="prose"><p><strong>Purpose:</strong> Find an important uncertainty worth paying to reduce. Begin with the product or service owner, not with a finished concept looking for a home.</p>
-<ul>
-<li><strong>Discover the work:</strong> Observe users, examine workflow data and existing complaints, identify workarounds, and distinguish the expressed request from the underlying task. Record access limits and whose perspective is missing.</li>
-<li><strong>Form alternatives:</strong> Generate candidate approaches independently before pooling them; include a process change, a deterministic solution, or an existing product when plausible. Use AI to widen and challenge the set, not to create a false impression of independent agreement.</li>
-<li><strong>Define the test:</strong> Select a primary user outcome, a baseline, a credible comparator, a failure condition, and the cheapest ethical test of the highest-consequence assumption. Establish authorized data use and the boundaries of the experiment.</li>
+</div></details><details><summary><span>Evidence log<span class="record-use">Kept through Test the uncertainty; it ends in a dated decision.</span></span></summary><div class="prose"><ul>
+<li><strong>Evaluation contract:</strong> Population, unit, comparator, primary measure, minimum worthwhile effect, guardrails, sample rationale, stopping rule.</li>
+<li><strong>Reproducibility:</strong> Data provenance/splits, model, prompt, tool and code versions.</li>
+<li><strong>Results:</strong> Denominators, estimates, uncertainty, subgroup results, correction effort.</li>
+<li><strong>Counterevidence:</strong> Failures, user objections, missing perspectives, validity limits.</li>
+<li><strong>Economics:</strong> Assumptions, scenario range, implementation and operating costs.</li>
+<li><strong>Decision:</strong> Stop/revise/pilot/scale; rationale, approver, next learning question.</li>
 </ul>
-<p>The independent-ideation suggestion is a design precaution, not a proven optimal workshop format. It responds to an experiment in short-story writing where AI assistance improved individual evaluations but made the stories more similar to each other; that finding does not establish that AI reduces product-innovation diversity in every setting. (<a target="_blank" rel="noopener noreferrer" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11244532/">Doshi &amp; Hauser, 2024</a>)</p>
-<p><strong>Exit decision:</strong> The outcome owner and delegated investment authority authorize a bounded experiment, revise the opportunity, or stop. The opportunity card should be understandable without a slide deck.</p>
-</div></details><details id="phase-2" class="phase"><summary><span><span class="phase-number">02</span>Test the uncertainty</span></summary><div class="prose"><p><strong>Purpose:</strong> Produce evidence that can change the decision. Refine the proposal and build the prototype together rather than requiring a detailed business case before learning anything.</p>
-<ul>
-<li><strong>Write the evaluation contract:</strong> Define the population, unit of analysis, current workflow, comparator, primary measure, meaningful improvement, guardrails, sample rationale, and analysis/stopping plan. Separate qualitative discovery from confirmatory claims.</li>
-<li><strong>Build the smallest useful test:</strong> Use a mock-up, concierge workflow, offline model comparison, retrieval experiment, or bounded working prototype according to the uncertainty. Avoid unnecessary agents, integrations, or model training.</li>
-<li><strong>Evaluate the whole experience:</strong> Test task completion, human correction effort, unacceptable errors, latency, and total cost, not just model output. Where appropriate and safe, compare human-only, AI-only, and human-AI performance on the same task.</li>
-<li><strong>Challenge the result:</strong> Use representative cases and an untouched final test set; examine relevant user and task slices. For temporal predictions, respect time ordering and prevent leakage; for generative systems, include groundedness, abstention, and adversarial cases.</li>
-<li><strong>Update the investment case:</strong> Show downside, base, and upside scenarios, with assumptions for adoption, integration, review, inference, maintenance, and error costs. Distinguish a forecast from an observed benefit.</li>
+</div></details><details><summary><span>Ownership card<span class="record-use">Opened in Commit and deliver; reviewed through Learn and compound.</span></span></summary><div class="prose"><ul>
+<li><strong>Acceptance:</strong> Product/service owner, delivery team, accepted scope, funded capacity.</li>
+<li><strong>Operations:</strong> Dependencies, access, monitoring, service expectations, support.</li>
+<li><strong>Safety:</strong> Risk owner, authorized actions, incident response, pause/rollback.</li>
+<li><strong>Value review:</strong> Outcome dashboard, adoption denominator, review date.</li>
+<li><strong>Open items:</strong> Unresolved risks, accountable people, deadlines.</li>
 </ul>
-<p>Application-specific evaluation, factual consistency, cost, and latency are explicit concerns in Huyen’s AI engineering treatment; NIST also cautions that laboratory and benchmark performance may not extrapolate to real use. (<a target="_blank" rel="noopener noreferrer" href="https://www.oreilly.com/library/view/ai-engineering/9781098166298/ch04.html">Huyen, 2025, ch. 4</a>, <a target="_blank" rel="noopener noreferrer" href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958388">NIST, 2024</a>) The statistical-learning textbook provides the methodological foundation for model assessment, resampling, and multiple testing, rather than a universal sample size for this framework. (<a target="_blank" rel="noopener noreferrer" href="https://link.springer.com/book/10.1007/978-3-031-38747-0">James et al., 2023</a>)</p>
-<p><strong>Exit decision:</strong> Stop, revise, or authorize a bounded pilot. An inconclusive result calls for an explicit choice about whether more information is worth its cost, not an automatic declaration of success or failure.</p>
-</div></details><details id="phase-3" class="phase"><summary><span><span class="phase-number">03</span>Commit and deliver</span></summary><div class="prose"><p><strong>Purpose:</strong> Turn a supported proposition into an owned, controlled product or service. A good demo alone is not evidence that the organization can operate it.</p>
-<ul>
-<li><strong>Present the decision, not the theater:</strong> State the problem, alternatives, strongest evidence and counterevidence, uncertainty, economics, risks, and precise resource request. Use an existing product review; require an executive presentation only when the decision exceeds delegated authority.</li>
-<li><strong>Pilot with controls:</strong> Define who is exposed, what the system may do, the monitoring owner, incident route, and conditions for pause or rollback. Use shadow evaluation or controlled release where appropriate; shadow mode does not test every user-interaction effect.</li>
-<li><strong>Accept together:</strong> The owner, builders, and relevant reviewers walk through the code or prototype, data rights and lineage, prompts/model versions, evaluations, known failures, instrumentation, support, and dependencies.</li>
-<li><strong>Commit to delivery capacity:</strong> Name the delivery team and funded roadmap or backlog commitment. If another team will continue the work, require explicit acceptance and overlap; a handoff is not complete because a document was sent.</li>
-</ul>
-<p>For agentic services, restrict tool permissions, isolate tests, log actions, and require appropriate human authorization for consequential actions. These are risk controls informed by NIST’s treatment of security, prompt injection, monitoring, and human-AI configurations, not a claim that a checklist can guarantee safety. (<a target="_blank" rel="noopener noreferrer" href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958388">NIST, 2024</a>)</p>
-<p><strong>Exit decision:</strong> The owner accepts the bounded service; the investment authority approves the relevant commitment; required risk reviewers approve within their remit. Unknowns stay visible on the ownership card, with an owner and next review.</p>
-</div></details><details id="phase-4" class="phase"><summary><span><span class="phase-number">04</span>Learn and compound</span></summary><div class="prose"><p><strong>Purpose:</strong> Establish whether the proposition produces durable value in use, and improve both the service and the method. Delivery is a beginning of measurement, not the end of innovation.</p>
-<ul>
-<li><strong>Measure in use:</strong> Compare outcomes with the baseline or a suitable control; distinguish availability, exposure, trial, repeat use, and successful task completion. Treat clicks, edits, and satisfaction as signals requiring interpretation, not direct proof of value.</li>
-<li><strong>Watch degradation:</strong> Monitor outcome quality, cost, latency, data changes, incidents, and user workarounds. Re-evaluate after changes to data, models, prompts, retrieval, or tools; versioning and continuous monitoring are core MLOps concerns. (<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2205.02302">Kreuzberger et al., 2023</a>)</li>
-<li><strong>Retrospect privately and together:</strong> Offer confidential one-to-one feedback as well as a team discussion. Select one or two changes to the next iteration and assign an owner; do not turn the retrospective into a mandatory ritual without an improvement decision.</li>
-<li><strong>Teach with evidence:</strong> Use a roadshow containing a successful case, a stopped case, costs, limitations, and reusable evaluations. For train-the-trainer adoption, progress from observation to co-facilitation to independently facilitated work reviewed against the same record requirements.</li>
-<li><strong>Govern a portfolio only when needed:</strong> Review strategic fit, evidence strength, shared dependencies, cumulative exposure, operating burden, and resources across bets. Compare within appropriate maturity and risk categories; do not rank an exploratory option against a mature product using a single ROI score.</li>
-</ul>
-<p><strong>Exit decision:</strong> Continue, change, expand, retire, or return to discovery. Keep a subsequent value-review date even when the next facilitation cycle has already begun.</p>
-</div></details></div></div></div></section>
+</div></details></div><div class="template-actions"><p>To start your first loop, copy these into the tools you already use.</p><button id="copy-templates" class="button" type="button">Copy all three records</button><p class="copy-status" id="template-status" role="status"></p></div><div id="template-fallback" class="copy-fallback" hidden><label for="template-text">Select and copy the starter records below.</label><textarea id="template-text" readonly>### Opportunity card
+
+- **User and task:** Who is trying to do what, in which context?
+- **Observed problem:** What evidence indicates a meaningful unmet need?
+- **Baseline and alternatives:** Current workflow; credible non-AI or simpler approach.
+- **Outcome and hypothesis:** What should improve, for whom, and why?
+- **People and authority:** Outcome owner; builders; facilitator; investment authority.
+- **Constraints:** Capacity, authorized data, rights, dependencies, risk boundaries.
+- **Next test:** Riskiest assumption; test cost cap; date of decision.
+
+### Evidence log
+
+- **Evaluation contract:** Population, unit, comparator, primary measure, minimum worthwhile effect, guardrails, sample rationale, stopping rule.
+- **Reproducibility:** Data provenance/splits, model, prompt, tool and code versions.
+- **Results:** Denominators, estimates, uncertainty, subgroup results, correction effort.
+- **Counterevidence:** Failures, user objections, missing perspectives, validity limits.
+- **Economics:** Assumptions, scenario range, implementation and operating costs.
+- **Decision:** Stop/revise/pilot/scale; rationale, approver, next learning question.
+
+### Ownership card
+
+- **Acceptance:** Product/service owner, delivery team, accepted scope, funded capacity.
+- **Operations:** Dependencies, access, monitoring, service expectations, support.
+- **Safety:** Risk owner, authorized actions, incident response, pause/rollback.
+- **Value review:** Outcome dashboard, adoption denominator, review date.
+- **Open items:** Unresolved risks, accountable people, deadlines.</textarea></div></div><p class="closing">The goal is not more AI projects. It is better decisions about which ones deserve to exist.</p></section>
 <section id="measures" class="section "><div class="sectionhead"><span class="eyebrow">THE SCOREBOARD</span><h2>Measure the experience.<br>Not the demo.</h2></div><div class="metric-deck prose"><p>Choose one primary outcome, a small number of guardrails, and a decision date. The definitions below are proposed operationalizations of concerns in the literature, not a standardized or validated scorecard; thresholds must be set locally before testing.</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Reference table; entries stack on mobile"><table>
 <thead>
@@ -195,7 +214,7 @@ This is not an argument for more committees. It is a proposal for four movements
 <li><strong>Learn:</strong> Assess repeat use alongside completed, acceptable briefs; return corrections and retrieval failures to the evaluation set. A faster first draft that increases total verification effort may fail the product’s goal.</li>
 </ul>
 <p>No numerical target is supplied because baseline difficulty, risk tolerance, and sample requirements are unknown. Set those before exposure rather than borrowing an impressive number from an unrelated study.</p>
-</div></details><div class="reading prose" style="margin-top:var(--space-10)"><h3>Adoption without ceremony</h3><p>Start with one opportunity, the three records, and the four accountabilities. Reuse sprint planning, product reviews, and existing engineering controls; the Scrum Guide is a model of a deliberately incomplete framework, not evidence for copying its exact events or team size into innovation work. (<a target="_blank" rel="noopener noreferrer" href="https://scrumguides.org/scrum-guide.html">Schwaber &amp; Sutherland, 2020</a>)</p>
+</div></details><div class="reading prose" style="margin-top:var(--space-10)"><h3>Adopt it without adding meetings</h3><p>Start with one opportunity, the three records, and the four accountabilities. Reuse sprint planning, product reviews, and existing engineering controls; the Scrum Guide is a model of a deliberately incomplete framework, not evidence for copying its exact events or team size into innovation work. (<a target="_blank" rel="noopener noreferrer" href="https://scrumguides.org/scrum-guide.html">Schwaber &amp; Sutherland, 2020</a>)</p>
 <p>For a volunteer cohort, negotiate protected capacity and record both activity time and elapsed calendar time. For a product team, embed the loop in existing sprints; for an enterprise, run recurring intake and portfolio reviews while preserving delegated decisions and delivery ownership.</p>
 <p>Cadence is a configuration, not a promise. Quarterly cohorts, sprint-level exploration, and ad hoc work may all fit; none substitutes for sufficient observation time to evaluate the specific outcome.</p>
 <p>Evaluate the framework itself across repeated cohorts: compare decision time, effort, evidence quality, and realized outcomes with an appropriate prior or concurrent process, recording differences in project mix. That is a proposed validation program, not evidence that this version already improves innovation speed or success.</p>
@@ -227,56 +246,6 @@ This is not an argument for more committees. It is a proposal for four movements
 <p>Public publisher pages, accessible manuscripts, book previews, and primary-source records were used for verification. Book access was partial, so the guide does not invent page-specific quotations or claim comprehensive full-text review; a Wiley quota limit prevented additional connected retrieval.</p>
 <p>Published versions take precedence over earlier working-paper headlines. Numerical results retain their population, measure, design, and limitations; original framework prescriptions are explicitly separated from findings.</p>
 </div></details></div></section>
-<section id="use-it" class="section "><div class="sectionhead"><span class="eyebrow">YOUR FIRST LOOP</span><h2>One opportunity.<br>Three living records.</h2></div><div class="guide-layout"><aside class="guide-aside"><p>Choose a problem with a named owner. Test what could change the decision.</p><p>Keep the method small. Make the evidence inspectable.</p></aside><div><div class="template-wrap"><h3>Starter records</h3><p class="caption">Adapt these fields to your existing tools. No new platform required.</p><div class="template-actions"><button id="copy-templates" class="button" type="button">Copy all three records</button><p class="copy-status" id="template-status" role="status"></p></div><details><summary>Opportunity card</summary><div class="prose"><ul>
-<li><strong>User and task:</strong> Who is trying to do what, in which context?</li>
-<li><strong>Observed problem:</strong> What evidence indicates a meaningful unmet need?</li>
-<li><strong>Baseline and alternatives:</strong> Current workflow; credible non-AI or simpler approach.</li>
-<li><strong>Outcome and hypothesis:</strong> What should improve, for whom, and why?</li>
-<li><strong>People and authority:</strong> Outcome owner; builders; facilitator; investment authority.</li>
-<li><strong>Constraints:</strong> Capacity, authorized data, rights, dependencies, risk boundaries.</li>
-<li><strong>Next test:</strong> Riskiest assumption; test cost cap; date of decision.</li>
-</ul>
-</div></details><details><summary>Evidence log</summary><div class="prose"><ul>
-<li><strong>Evaluation contract:</strong> Population, unit, comparator, primary measure, minimum worthwhile effect, guardrails, sample rationale, stopping rule.</li>
-<li><strong>Reproducibility:</strong> Data provenance/splits, model, prompt, tool and code versions.</li>
-<li><strong>Results:</strong> Denominators, estimates, uncertainty, subgroup results, correction effort.</li>
-<li><strong>Counterevidence:</strong> Failures, user objections, missing perspectives, validity limits.</li>
-<li><strong>Economics:</strong> Assumptions, scenario range, implementation and operating costs.</li>
-<li><strong>Decision:</strong> Stop/revise/pilot/scale; rationale, approver, next learning question.</li>
-</ul>
-</div></details><details><summary>Ownership card</summary><div class="prose"><ul>
-<li><strong>Acceptance:</strong> Product/service owner, delivery team, accepted scope, funded capacity.</li>
-<li><strong>Operations:</strong> Dependencies, access, monitoring, service expectations, support.</li>
-<li><strong>Safety:</strong> Risk owner, authorized actions, incident response, pause/rollback.</li>
-<li><strong>Value review:</strong> Outcome dashboard, adoption denominator, review date.</li>
-<li><strong>Open items:</strong> Unresolved risks, accountable people, deadlines.</li>
-</ul>
-</div></details><div id="template-fallback" class="copy-fallback" hidden><label for="template-text">Select and copy the starter records below.</label><textarea id="template-text" readonly>### Opportunity card
 
-- **User and task:** Who is trying to do what, in which context?
-- **Observed problem:** What evidence indicates a meaningful unmet need?
-- **Baseline and alternatives:** Current workflow; credible non-AI or simpler approach.
-- **Outcome and hypothesis:** What should improve, for whom, and why?
-- **People and authority:** Outcome owner; builders; facilitator; investment authority.
-- **Constraints:** Capacity, authorized data, rights, dependencies, risk boundaries.
-- **Next test:** Riskiest assumption; test cost cap; date of decision.
-
-### Evidence log
-
-- **Evaluation contract:** Population, unit, comparator, primary measure, minimum worthwhile effect, guardrails, sample rationale, stopping rule.
-- **Reproducibility:** Data provenance/splits, model, prompt, tool and code versions.
-- **Results:** Denominators, estimates, uncertainty, subgroup results, correction effort.
-- **Counterevidence:** Failures, user objections, missing perspectives, validity limits.
-- **Economics:** Assumptions, scenario range, implementation and operating costs.
-- **Decision:** Stop/revise/pilot/scale; rationale, approver, next learning question.
-
-### Ownership card
-
-- **Acceptance:** Product/service owner, delivery team, accepted scope, funded capacity.
-- **Operations:** Dependencies, access, monitoring, service expectations, support.
-- **Safety:** Risk owner, authorized actions, incident response, pause/rollback.
-- **Value review:** Outcome dashboard, adoption denominator, review date.
-- **Open items:** Unresolved risks, accountable people, deadlines.</textarea></div></div><p class="closing">The goal is not more AI projects. It is better decisions about which ones deserve to exist.</p><p class="caption">The rules, record count, team-size suggestion, and cadence are original design proposals. Research supports components and cautions, not the effectiveness of this particular synthesis.</p></div></div></section>
-
-<footer class="loop-footer"><p>All opinions are my own.</p><p>Editorial still-life illustration generated with AI. <a href="#evidence">Inspect the evidence and bibliography</a></p></footer>
+<footer class="loop-footer"><p>All opinions are my own.</p></footer>
 </div>

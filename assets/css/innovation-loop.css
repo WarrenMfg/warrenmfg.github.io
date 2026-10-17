@@ -12,6 +12,8 @@
   --loop-band: #f0e7d5;
   --loop-band-text: #1c1c1c;
   --loop-band-line: rgba(28, 28, 28, 0.25);
+  --loop-band-muted: #6b6150;
+  --loop-band-accent: #8a5a00;
   --loop-nav-height: 48px;
   color: var(--loop-text);
 }
@@ -246,94 +248,80 @@
   font-size: 12px;
 }
 
-/* The loop band: the cream panel from the original, inverted against the dark page */
-.loop-post .loop {
-  background: var(--loop-band);
+/* Movements: one cream card per movement (name, question, evidence bar, implementation
+   details), echoing the original page's loop band against the dark page */
+.loop-post .movements {
+  display: grid;
+  gap: 16px;
+  margin-block: 24px 8px;
+}
+
+.loop-post .movement {
+  padding: 20px 22px 0;
   color: var(--loop-band-text);
-  padding: 24px;
-  margin-bottom: 32px;
+  background: var(--loop-band);
   border-radius: 6px;
 }
 
-.loop-post .loop-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 4px 24px;
+.loop-post .movement-num {
   font-size: 11px;
-  letter-spacing: 0.08em;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--loop-band-line);
+  letter-spacing: 0.1em;
+  color: var(--loop-band-accent);
 }
 
-.loop-post .loop-track {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  padding-block: 24px;
-}
-
-.loop-post .loop-item,
-.loop-post .loop-item:hover {
+.loop-post .movement h3 {
+  margin: 4px 0 6px;
+  font-size: 20px;
   color: var(--loop-band-text);
 }
 
-.loop-post .loop-item:hover b {
-  text-decoration: underline;
+.loop-post .movement-question {
+  margin-bottom: 12px;
+  font-size: 15px;
 }
 
-.loop-post .loop-num {
+.loop-post .movement-evidence {
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.loop-post .movement-evidence span {
   display: block;
+  margin-bottom: 2px;
   font-size: 11px;
-  margin-bottom: 6px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--loop-band-muted);
 }
 
-.loop-post .loop-item b {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 4px;
+.loop-post .movement details,
+.loop-post .movement details:last-child {
+  border-top-color: var(--loop-band-line);
+  border-bottom: 0;
 }
 
-.loop-post .loop-item span:last-child {
-  display: block;
-  font-size: 13px;
+.loop-post .movement summary {
+  min-height: 52px;
+  font-size: 14px;
+  color: var(--loop-band-text);
 }
 
-.loop-post .loop-return {
-  display: flex;
-  gap: 10px;
-  margin: 0;
-  padding-top: 16px;
-  font-size: 13px;
-  border-top: 1px solid var(--loop-band-line);
+.loop-post .movement summary::after,
+.loop-post .movement summary:hover,
+.loop-post .movement a {
+  color: var(--loop-band-accent);
 }
 
-/* Guide aside: three small facts in a row */
-.loop-post .guide-aside {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 24px;
-  font-size: 12px;
-  color: var(--loop-muted);
+.loop-post .movement a:hover {
+  color: var(--loop-band-text);
 }
 
-.loop-post .guide-aside p {
-  flex: 1 1 25%;
-  margin: 0;
+.loop-post .movement .prose ul {
+  list-style: disc;
 }
 
-.loop-post .guide-aside b {
-  display: block;
-  color: var(--loop-text);
-}
-
-.loop-post .guide-main > h3 {
-  margin-top: 40px;
-}
-
-.loop-post .guide-main > .prose {
-  margin-bottom: 24px;
+.loop-post .movement :focus-visible {
+  outline-color: var(--loop-band-accent);
 }
 
 /* Disclosures: + / − markers */
@@ -377,33 +365,13 @@
   color: var(--loop-primary);
 }
 
+/* Breathing room when an accordion directly follows a block of prose */
+.loop-post .prose + details {
+  margin-top: 24px;
+}
+
 .loop-post details > .prose {
   padding-bottom: 24px;
-}
-
-.loop-post .phase-number {
-  display: inline-block;
-  margin-right: 12px;
-  font-size: 12px;
-  color: var(--loop-faint);
-}
-
-.loop-post .phase-grid {
-  margin-top: 32px;
-}
-
-.loop-post .section-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 12px;
-}
-
-.loop-post .section-actions p {
-  margin: 0;
-  font-size: 13px;
-  color: var(--loop-muted);
 }
 
 /* Buttons */
@@ -585,6 +553,7 @@
 
 /* Starter records panel */
 .loop-post .template-wrap {
+  margin-top: 20px;
   padding: 24px;
   background: var(--loop-surface);
   border: 1px solid var(--loop-border);
@@ -596,7 +565,20 @@
 }
 
 .loop-post .template-actions {
-  margin-block: 20px;
+  margin-block: 20px 4px;
+}
+
+.loop-post .template-actions p:not(.copy-status) {
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--loop-muted);
+}
+
+.loop-post .record-use {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--loop-faint);
 }
 
 .loop-post .template-wrap summary {
