@@ -14,6 +14,33 @@ body {
   padding-bottom: 0;
 }
 
+// Tables: wide ones scroll sideways inside this wrapper (added in the default layout)
+// instead of squeezing columns or widening the page.
+.table-scroll {
+  max-width: 100%;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  table {
+    margin-bottom: 0;
+  }
+}
+
+th,
+td {
+  vertical-align: top;
+}
+
+@media (max-width: 480px) {
+  // Give each column enough room to stay readable; the wrapper scrolls if they don't all fit
+  th,
+  td {
+    min-width: 140px;
+    font-size: 13px;
+  }
+}
+
 section {
   margin-top: 0;
   margin-bottom: 0;

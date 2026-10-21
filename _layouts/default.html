@@ -40,7 +40,8 @@
         </div>
         {% endunless %}
 
-        {{ content }}
+        {% comment %} Wrap every table so wide ones scroll inside their own box, not the page {% endcomment %}
+        {{ content | replace: '<table', '<div class="table-scroll"><table' | replace: '</table>', '</table></div>' }}
 
       </section>
 

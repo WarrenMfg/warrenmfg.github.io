@@ -158,7 +158,7 @@ pinned: true
 <p>Evaluate the framework itself across repeated cohorts: compare decision time, effort, evidence quality, and realized outcomes with an appropriate prior or concurrent process, recording differences in project mix. That is a proposed validation program, not evidence that this version already improves innovation speed or success.</p>
 </div><p class="closing">The goal is not more AI projects. It is better decisions about which ones deserve to exist.</p></section>
 <section id="measures" class="section"><div class="sectionhead"><span class="eyebrow">THE SCOREBOARD</span><h2>Measure the experience.<br>Not the demo.</h2></div><div class="prose"><p>Choose one primary outcome, a small number of guardrails, and a decision date. The definitions below are proposed operationalizations of concerns in the literature, not a standardized or validated scorecard; thresholds must be set locally before testing.</p>
-<div class="table-scroll"><table>
+<table>
 <thead>
 <tr>
 <th>Measure</th>
@@ -206,7 +206,7 @@ pinned: true
 <td data-label="Operational definition and use">Track elapsed time and person-hours to a recorded decision, evidence completeness, stopped/revised/piloted bets, and realized versus forecast value by cohort. Do not prescribe a target kill rate.</td>
 <td data-label="Evidence connection">Scientific decision training changed termination behavior; it did not validate these proposed process KPIs. (<a target="_blank" rel="noopener noreferrer" href="https://openaccess.city.ac.uk/id/eprint/32437/">Camuffo et al., 2024</a>)</td>
 </tr>
-</tbody></table></div>
+</tbody></table>
 <p>Use randomized product experiments when feasible and ethical for causal impact claims. If using observational before/after comparisons, identify seasonality, selection, workflow changes, and other rival explanations; do not relabel correlation as incremental value.</p>
 <p>For the financial case, use a transparent scenario model: eligible volume × adoption × incremental contribution per adopted task, minus incremental operating and implementation costs. This is a proposed planning identity, not a literature-derived effect estimate; avoid double-counting benefits and do not book released capacity as cash savings unless spending actually changes.</p>
 </div></section>
