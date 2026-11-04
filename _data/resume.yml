@@ -392,6 +392,10 @@ awards:
     description: Afghanistan, 2013.
 
 projects:
+  - title: Thinking Operators
+    org: YouTube
+    url: https://www.youtube.com/watch?v=FPwIg1OUmQg
+    description: Design how AI thinks—structured thinking you can see.
   - title: Dapper Applicant
     org: YouTube
     url: https://www.youtube.com/watch?v=DJ2U-i3ulxw
